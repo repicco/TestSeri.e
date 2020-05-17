@@ -177,6 +177,23 @@ li:hover {
   opacity: 0.7;
 }
 
+/* Carousel */
+.carousel-prod {
+  display: flex !important;
+  flex-direction: row;
+}
+
+.carousel-banner {
+
+}
+
+.slick-arrow {
+display: none;
+}
+
+.slick-list{
+  width: 100%;
+}
 
 
 

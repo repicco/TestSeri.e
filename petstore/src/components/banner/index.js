@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Slider from 'react-slick'
 
 import Coelho from '../../img/banner1.jpg'
 import Cao from '../../img/banner2.jpg'
@@ -11,21 +12,42 @@ import Acessorios from '../../img/acessorios.jpg'
 
 class Banner extends Component{
     render(){
+        const settings = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover: true
+        }
         return(
             <div className='wd-100 banner'>
-                <img className='img-banner responsive' src={Cao} />
+                <Slider {...settings} className='img-banner responsive'>
+                    <div>
+                        <img alt='Coelho' className='img-banner responsive' src={Coelho} />
+                    </div>
+                    <div>
+                        <img alt='Cachorro' className='img-banner responsive' src={Cao} />
+                    </div>
+                    <div>
+                        <img alt='Calopsita' className='img-banner responsive' src={Calopsita} />
+                    </div>
+                </Slider>
+                
                 <div className='bg-orange wd-100 center'>
                     <div className='container card-categoria'>
                         <div className='col-4 card-cat'>
-                            <img className='img-cat' src={Racoes} />
+                            <img alt='Categoria' className='img-cat' src={Racoes} />
                             <p className='txt-cat txt-cat-center'>Rações</p>
                         </div>
                         <div className='col-4 card-cat'>
-                            <img className='img-cat' src={Brinquedos} />
+                            <img alt='Categoria' className='img-cat' src={Brinquedos} />
                             <p className='txt-cat txt-cat-center'>Brinquedos</p>
                         </div>
                         <div className='col-4 card-cat'>
-                            <img className='img-cat' src={Acessorios} />
+                            <img alt='Categoria' className='img-cat' src={Acessorios} />
                             <p className='txt-cat txt-cat-center'>Acessórios</p>
                         </div>
                     </div>

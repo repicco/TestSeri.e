@@ -4,7 +4,7 @@ class Produto extends Component{
     render(){
         return(
             <div className='col-3 card'>
-                <img src={this.props.img} className='responsive card-img'></img>
+                <img alt='Produto' src={this.props.img} className='responsive card-img'></img>
                 <p className='card-text'>Lorem Ipsum</p>
                 <p className='card-footer'>R$ 55,00</p>
             </div>

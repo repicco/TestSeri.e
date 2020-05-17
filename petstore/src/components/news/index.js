@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Slider from 'react-slick'
 
 import Produto from '../produto'
 import CategoriaProduto from '../categoriaproduto'
@@ -19,21 +20,59 @@ import Passaros from '../../img/passaros.jpg'
 
 class News extends Component{
     render(){
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+
+        const settings2 = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover: true
+        }
         return(
             <div className='wd-100 center'>
                 <h3 className='col-12 title'>NOVIDADES</h3>
-                <div id='novidades1' className='container'>
-                    <Produto img={Prod1}/>
-                    <Produto img={Prod2}/>
-                    <Produto img={Prod7}/>
-                    <Produto img={Prod8}/>
-                </div>
+                <Slider {...settings} className='container'>
+                    <div className='carousel-prod'>
+                        <Produto img={Prod7}/>
+                        <Produto img={Prod8}/>
+                        <Produto img={Prod5}/>
+                        <Produto img={Prod6}/>
+                    </div>
+                    <div className='carousel-prod'>
+                        <Produto img={Prod1}/>
+                        <Produto img={Prod2}/>
+                        <Produto img={Prod7}/>
+                        <Produto img={Prod8}/>
+                    </div>
+                    <div className='carousel-prod'>
+                        <Produto img={Prod3}/>
+                        <Produto img={Prod4}/>
+                        <Produto img={Prod5}/>
+                        <Produto img={Prod6}/>
+                    </div>
+                </Slider>
                 <h3 className='col-12 title'>Categoria Produtos</h3>
                 <div className='wd-100 center'>
-                    <div className='container card-categoria'>
-                        <CategoriaProduto img={Cao} categoria='Cachorros' class='txt-cat txt-cat-left'/>
-                        <CategoriaProduto img={Gato} categoria='Gatos' class='txt-cat txt-cat-right'/>
-                    </div>
+                    <Slider {...settings2} className='container wd-100'>
+                        <div className='carousel-prod'>
+                            <CategoriaProduto img={Cao} categoria='Cachorros' class='txt-cat txt-cat-left'/>
+                            <CategoriaProduto img={Gato} categoria='Gatos' class='txt-cat txt-cat-right'/>
+                        </div>
+                        <div className='carousel-prod'>
+                            <CategoriaProduto img={Exoticos} categoria='Exóticos' class='txt-cat txt-cat-left'/>
+                            <CategoriaProduto img={Passaros} categoria='Passáros' class='txt-cat txt-cat-right'/>
+                        </div>
+                    </Slider>
                 </div>
                 <h3 className='col-12 title'>Produtos</h3>
                 <div id='novidades1' className='container'>
