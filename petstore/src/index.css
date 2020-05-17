@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+  
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0 10% 0 10%;
+    width: 80%;
+    max-width: 980px;
+}
+  
+.col-1{
+    width: 8.3%;
+    flex-wrap: wrap;
+}
+  
+.col-2{
+    width: 16.6%;
+    flex-wrap: wrap;
+}
+  
+.col-3{
+width: 24.9%;
+flex-wrap: wrap;
+}
+
+.col-4{
+width: 33.2%;
+flex-wrap: wrap;
+}
+
+.col-5{
+width: 41.5%;
+flex-wrap: wrap;
+}
+
+.col-6{
+width: 50%;
+flex-wrap: wrap;
+}
+
+.col-7{
+width: 58.3%;
+flex-wrap: wrap;
+}
+
+.col-8{
+width: 66.4%;
+flex-wrap: wrap;
+}
+
+.col-9{
+width: 74.7%;
+flex-wrap: wrap;
+}
+
+.col-10{
+width: 83%;
+flex-wrap: wrap;
+}
+
+.col-11{
+width: 91.3%;
+flex-wrap: wrap;
+}
+
+.col-12{
+width: 100%;
+flex-wrap: wrap;
+}
+
+.off-1{
+margin-left: 8.3%;
+flex-wrap: wrap;
+}
+
+.off-2{
+margin-left: 16.6%;
+flex-wrap: wrap;
+}
+
+.off-3{
+margin-left: 24.9%;
+flex-wrap: wrap;
+}
+
+.off-4{
+margin-left: 33.2%;
+flex-wrap: wrap;
+}
+
+.off-5{
+margin-left: 41.5%;
+flex-wrap: wrap;
+}
+
+.off-6{
+margin-left: 50%;
+flex-wrap: wrap;
+}
+
+.off-7{
+margin-left: 58.3%;
+flex-wrap: wrap;
+}
+
+.off-8{
+margin-left: 66.4%;
+flex-wrap: wrap;
+}
+
+.off-9{
+margin-left: 74.7%;
+flex-wrap: wrap;
+}
+
+.off-10{
+margin-left: 83%;
+flex-wrap: wrap;
+}
+
+.off-11{
+margin-left: 91.3%;
+flex-wrap: wrap;
+}
+
+.off-12{
+margin-left: 100%;
+flex-wrap: wrap;
+}
