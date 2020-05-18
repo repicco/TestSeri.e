@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import Slider from 'react-slick'
+import './style.css'
 
 import Coelho from '../../img/banner1.jpg'
 import Cao from '../../img/banner2.jpg'

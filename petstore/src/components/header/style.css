@@ -1,0 +1,22 @@
+
+#logon {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-logo {
+    max-height: 80px;
+    margin-bottom: 20px;
+}
+
+.fa-user {
+    font-size: 20px;
+    color: rgb(127,127,127);
+    padding: 4px;
+}
+
+.fa-shopping-cart {
+    font-size: 20px;
+    color: rgb(127,127,127);
+    padding: 4px;
+}

@@ -61,8 +61,8 @@ class News extends Component{
                         <Produto img={Prod6}/>
                     </div>
                 </Slider>
-                <h3 className='col-12 title'>Categoria Produtos</h3>
-                <div className='wd-100 center'>
+                <div id='categoria' className='wd-100 center'>
+                    <h3 className='col-12 title'>Categoria de Produtos</h3>
                     <Slider {...settings2} className='container wd-100'>
                         <div className='carousel-prod'>
                             <CategoriaProduto img={Cao} categoria='Cachorros' class='txt-cat txt-cat-left'/>

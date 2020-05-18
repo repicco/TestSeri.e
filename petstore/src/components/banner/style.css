@@ -1,0 +1,13 @@
+/* Banner */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .img-banner {
+    max-height: 400px;
+    max-width: 1600px;
+  }

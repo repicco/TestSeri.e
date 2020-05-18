@@ -14,6 +14,10 @@ class App extends Component {
         <Menu/>
         <Banner/>
         <News/>
+        <div className='container relative'>
+          <a href='#header'><i class="fas fa-arrow-up"></i></a>
+          <a target='_blank' rel='noopener noreferrer' href='https://wa.me/5511988884444'><i className="fab fa-whatsapp"></i></a>
+        </div>
       </div>
     )
   }
