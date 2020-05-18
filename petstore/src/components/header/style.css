@@ -9,15 +9,27 @@
 .fa-search {
   border: 1px solid;
   border-left: none;
-  padding: 5px;
-  font-size: 1.3rem;
+  padding: 5%;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .search-input {
+    width: 100%;
     border: 1px solid;
     border-right: none;
-    padding: 5px;
-    font-size: 1rem;
+    padding: 5%;
+    font-size: 0.8rem;
+}
+
+.search:hover > .search-input {
+  color: rgb(255, 162, 0);
+  border-color: rgb(255, 162, 0);
+}
+
+.search:hover > .fa-search {
+  color: rgb(255, 162, 0);
+  border-color: rgb(255, 162, 0);
 }
 
 #logon {
@@ -31,16 +43,32 @@
     padding: 8px;
 }
 
+@media (max-width: 600px){
+  .img-logo {
+    max-width: 80%;
+  }
+}
+
 .fa-user {
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(127,127,127);
     padding: 4px;
+    cursor: pointer;
+}
+
+.fa-user:hover {
+  color: rgb(255, 162, 0);
 }
 
 .fa-shopping-cart {
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(127,127,127);
     padding: 4px;
+    cursor: pointer;
+}
+
+.fa-shopping-cart:hover {
+  color: rgb(255, 162, 0);
 }
 
 /* Sociais */
@@ -53,6 +81,7 @@
   background-color: rgb(129, 88, 197);
   border-radius: 5px;
   cursor: pointer;
+  padding: 1px;
 }
 
 .btn-close-bar {
@@ -62,9 +91,9 @@
 .fa-arrow-up {
   font-size: 40px;
   border-radius: 50%;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   padding: 8px;
-  background-color: rgb(127,127,127);
+  background-color: rgba(127,127,127, 0.8);
   position: fixed;
   bottom: 15%;
   right: 15%;
@@ -73,9 +102,9 @@
 .fa-whatsapp {
   font-size: 40px;
   border-radius: 50%;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   padding: 8px;
-  background-color: rgb(77, 194, 71);
+  background-color: rgba(77, 194, 71, 0.8);
   position: fixed;
   bottom: 5%;
   right: 15%;

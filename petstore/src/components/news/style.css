@@ -1,15 +1,30 @@
 /* Carousel */
+#produtos {
+  margin-top:60px;
+}
+
 .carousel-prod {
     display: flex !important;
     flex-direction: row;
   }
   
   .slick-arrow {
-  display: none;
+  display: none !important;
   }
   
   .slick-list{
     width: 100%;
+  }
+
+  .slick-dots{
+    bottom: -35px;
+    width: 72%;
+  }
+
+  .slick-dots li{
+    border: none;
+    background-color: #fff;
+    color: rgb(129, 88, 197);
   }
 
   .txt-prod {
@@ -19,9 +34,28 @@
     font-weight: bold;
     font-size: 1rem;
     padding: 5px;
+    cursor: pointer;
   }
 
   .txt-prod:hover {
     background-color: #fff;
     color:rgb(255, 162, 0);
+  }
+
+  .txt-comprar {
+    font-size: 1rem;
+    opacity: 0;
+    text-align: center;
+  }
+
+  .card-comprar:hover {
+    background-color: rgb(127, 127, 127);
+    opacity: 0.9;
+    border-radius: 5px;
+  }
+
+  .card-comprar:hover .txt-comprar {
+    opacity: 1;
+    background-color: rgb(255, 162, 0);
+    cursor: pointer;
   }

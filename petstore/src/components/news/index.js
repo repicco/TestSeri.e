@@ -30,7 +30,7 @@ class News extends Component{
         }
 
         const settings2 = {
-            dots: false,
+            dots: true,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
@@ -115,7 +115,7 @@ class News extends Component{
                         </div>
                     </Slider>
                 </div>
-                <h3 className='col-12 title'>Produtos</h3>
+                <h3 id='produtos' className='col-12 title'>Produtos</h3>
                 <div id='novidades1' className='container block-mob-flex'>
                     <Produto img={Prod1} mob={false} />
                     <Produto img={Prod2} mob={false} />

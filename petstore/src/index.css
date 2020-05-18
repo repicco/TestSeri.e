@@ -16,8 +16,9 @@ html, body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-    width: 80%;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
     max-width: 980px;
 }
   

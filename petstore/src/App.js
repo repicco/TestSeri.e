@@ -5,7 +5,7 @@ import Header from './components/header'
 import Menu from './components/menu'
 import Banner from './components/banner'
 import News from './components/news'
-
+import Contato from './components/contato'
 import Footer from './components/footer'
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
         <Menu/>
         <Banner/>
         <News/>
-        
+        <Contato/>
         <Footer/>
       </div>
     )
