@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import Slider from 'react-slick'
+import './style.css'
 
 import Produto from '../produto'
 import CategoriaProduto from '../categoriaproduto'

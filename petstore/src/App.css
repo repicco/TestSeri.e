@@ -26,47 +26,6 @@
   position: relative;
 }
 
-/* Sociais */
-
-.btn-close {
-  border: none;
-  position: fixed;
-  bottom: 25%;
-  right: 15%;
-  background-color: rgb(129, 88, 197);
-  border-radius: 5px;
-}
-
-.fa-arrow-up {
-  font-size: 40px;
-  border-radius: 50%;
-  color: #fff;
-  padding: 8px;
-  background-color: rgb(127,127,127);
-  position: fixed;
-  bottom: 15%;
-  right: 15%;
-}
-
-.fa-whatsapp {
-  font-size: 40px;
-  border-radius: 50%;
-  color: #fff;
-  padding: 8px;
-  background-color: rgb(77, 194, 71);
-  position: fixed;
-  bottom: 5%;
-  right: 15%;
-}
-
-#btn-fixed {
-  z-index: 99;
-  border: none;
-}
-
-#btn-fixed-close {
-  display: none;
-}
 
 /* Img */
 
@@ -99,8 +58,6 @@
 .card-footer {
   font-size: 1rem;
 }
-
-
 
 /* Categoria.Banner_Produtos */
 #categoria {
@@ -169,24 +126,6 @@
 }
 
 
-
-/* Carousel */
-.carousel-prod {
-  display: flex !important;
-  flex-direction: row;
-}
-
-.carousel-banner {
-
-}
-
-.slick-arrow {
-display: none;
-}
-
-.slick-list{
-  width: 100%;
-}
 
 
 

@@ -1,0 +1,13 @@
+/* Carousel */
+.carousel-prod {
+    display: flex !important;
+    flex-direction: row;
+  }
+  
+  .slick-arrow {
+  display: none;
+  }
+  
+  .slick-list{
+    width: 100%;
+  }

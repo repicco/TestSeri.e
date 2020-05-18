@@ -1,0 +1,33 @@
+.block-desk {
+    display: none ;
+}
+
+.block-desk-flex {
+    display: none;
+}
+
+.block-mob-flex {
+    display: flex;
+}
+
+.block-mob {
+    display: block;
+}
+
+@media(max-width: 600px) {
+    .block-desk {
+        display: block;
+    }
+
+    .block-desk-flex {
+        display: flex;
+    }
+
+    .block-mob {
+        display: none;
+    }
+
+    .block-mob-flex {
+        display: none;
+    }
+}

@@ -141,3 +141,143 @@ flex-wrap: wrap;
 margin-left: 100%;
 flex-wrap: wrap;
 }
+
+@media(max-width: 600px) {
+    .mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col-s1{
+        width: 8.3%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+      
+    .col-s2{
+        width: 16.6%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+      
+    .col-s3{
+        width: 24.9%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    
+    .col-s4{
+        width: 33.2%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    
+    .col-s5{
+        width: 41.5%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    
+    .col-s6{
+        width: 50%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    
+    .col-s7{
+        width: 58.3%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    
+    .col-s8{
+        width: 66.4%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    
+    .col-s9{
+        width: 74.7%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    
+    .col-s10{
+        width: 83%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    
+    .col-s11{
+        width: 91.3%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    
+    .col-s12{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0;  
+    }
+    
+    .off-s1{
+    margin-left: 8.3%;
+    flex-wrap: wrap;
+    }
+    
+    .off-s2{
+    margin-left: 16.6%;
+    flex-wrap: wrap;
+    }
+    
+    .off-s3{
+    margin-left: 24.9%;
+    flex-wrap: wrap;
+    }
+    
+    .off-s4{
+    margin-left: 33.2%;
+    flex-wrap: wrap;
+    }
+    
+    .off-s5{
+    margin-left: 41.5%;
+    flex-wrap: wrap;
+    }
+    
+    .off-s6{
+    margin-left: 50%;
+    flex-wrap: wrap;
+    }
+    
+    .off-s7{
+    margin-left: 58.3%;
+    flex-wrap: wrap;
+    }
+    
+    .off-s8{
+    margin-left: 66.4%;
+    flex-wrap: wrap;
+    }
+    
+    .off-s9{
+    margin-left: 74.7%;
+    flex-wrap: wrap;
+    }
+    
+    .off-s10{
+    margin-left: 83%;
+    flex-wrap: wrap;
+    }
+    
+    .off-s11{
+    margin-left: 91.3%;
+    flex-wrap: wrap;
+    }
+    
+    .off-s12{
+    margin-left: 100%;
+    flex-wrap: wrap;
+    }
+}

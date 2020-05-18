@@ -28,6 +28,7 @@
 .img-logo {
     max-height: 80px;
     margin-bottom: 20px;
+    padding: 8px;
 }
 
 .fa-user {
@@ -52,6 +53,10 @@
   background-color: rgb(129, 88, 197);
   border-radius: 5px;
   cursor: pointer;
+}
+
+.btn-close-bar {
+  color: #fff !important;
 }
 
 .fa-arrow-up {

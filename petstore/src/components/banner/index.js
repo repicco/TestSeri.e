@@ -38,20 +38,34 @@ class Banner extends Component{
                 </Slider>
                 
                 <div className='bg-orange wd-100 center'>
-                    <div className='container card-categoria'>
-                        <div className='col-4 card-cat'>
+                    <div className='container card-categoria block-mob-flex'>
+                        <div className='col-4 col-s12 card-cat'>
                             <img alt='Categoria' className='img-cat' src={Racoes} />
                             <p className='txt-cat txt-cat-center'>Rações</p>
                         </div>
-                        <div className='col-4 card-cat'>
+                        <div className='col-4 col-s12 card-cat'>
                             <img alt='Categoria' className='img-cat' src={Brinquedos} />
                             <p className='txt-cat txt-cat-center'>Brinquedos</p>
                         </div>
-                        <div className='col-4 card-cat'>
+                        <div className='col-4 col-s12 card-cat'>
                             <img alt='Categoria' className='img-cat' src={Acessorios} />
                             <p className='txt-cat txt-cat-center'>Acessórios</p>
                         </div>
                     </div>
+                    <Slider className='container card-categoria block-desk'>
+                        <div className='col-4 col-s12 card-cat'>
+                            <img alt='Categoria' className='img-cat' src={Racoes} />
+                            <p className='txt-cat txt-cat-center'>Rações</p>
+                        </div>
+                        <div className='col-4 col-s12 card-cat'>
+                            <img alt='Categoria' className='img-cat' src={Brinquedos} />
+                            <p className='txt-cat txt-cat-center'>Brinquedos</p>
+                        </div>
+                        <div className='col-4 col-s12 card-cat'>
+                            <img alt='Categoria' className='img-cat' src={Acessorios} />
+                            <p className='txt-cat txt-cat-center'>Acessórios</p>
+                        </div>
+                    </Slider>
                 </div>
             </div>
         )

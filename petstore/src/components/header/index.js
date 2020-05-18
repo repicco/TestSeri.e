@@ -24,20 +24,20 @@ class Header extends Component{
     
     render(){
         return(
-            <header id='header' className='container'>
-                <div className='col-2 center relative search'>
+            <header id='header' className='container mobile'>
+                <div className='col-2 col-s12 center relative search'>
                     <input type='text' placeholder='Pesquisar...' className='search-input'></input>
                     <i className="fas fa-search"></i> 
                 </div>
-                <div className='col-4 off-2'>
+                <div className='col-4 off-2 col-s12'>
                     <img alt='Logo' className='img-logo responsive' src={Logo} />
                 </div>
-                <div id='logon' className='col-1 off-3 center'>
+                <div id='logon' className='col-1 off-3 col-s6 center'>
                     <i className="fas fa-user"></i>
                     <i class="fas fa-shopping-cart"></i>
                 </div>
                 <div id={this.state.btnId} className='relative'>
-                    <button className='btn-close' onClick={this.fechaBtn}><i className='btn-bar fas fa-times'></i></button>
+                    <button className='btn-close' onClick={this.fechaBtn}><i className='btn-close-bar btn-bar fas fa-times'></i></button>
                     <a href='#header'><i className="fas fa-arrow-up"></i></a>
                     <a target='_blank' rel='noopener noreferrer' href='https://wa.me/5511988884444'><i className="fab fa-whatsapp"></i></a>
                  </div>

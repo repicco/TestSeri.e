@@ -1,39 +1,65 @@
-﻿************************************
+************************************
 ****  TESTE SÉRI.E DESIGN - JS  ****
 ************************************
-
 
 
 Aqui são listados alguns testes de Javascript. Você pode colocar as respostas aqui mesmo, em baixo da pergunta.
 Você pode usar JQuery a vontade, embora seja preferível o código em Javascript puro.
 
-
-
-
-
 1) Faça um laço for de 0 a 100 que retorne um array com todos os números que são divisíveis por 7;
 
-
+ var array = []
+ 
+  for ( var i = 0; i < 100; i++ ){
+   if( i % 7 === 0){
+       array.push(i)
+     }
+  }
 
 2) Crie uma função que receba dois parâmetros, o primeiro chamado 'texto' - string - e o segundo chamado 'vezes' - numero -. Esta função tem como objetivo retornar uma nova string com o texto repetido, separado por virgula, quantas vezes foi passado no parâmetro 'vezes'. Exibir esta nova string no console.
 
-
+  function rptStr( texto, vezes ){
+     texto = texto + ', '
+     let str = texto.repeat(vezes)
+     return (str)
+  }
+ 
+  var result = rptStr( 'Renato Picco', 15)
+ 
+  console.log(result)
 
 3) Suponha que temos uma div com a classe 'pai' e outra div com a classe 'filho', ambas são divs independentes, que não estão dentro de nenhuma outra. Como seria caso fosse preciso colocar a div 'filho' dentro da div 'pai' ?
 
-
-
+ var pai = document.getElementsByClassName('pai')
+ var filho = document.getElementsByClassName('filho')
+ 
+ pai.appendChild(filho)
+ 
 4) Suponha que temos três nós de parágrafo dentro de uma div. Como seria para alterar o texto do segundo parágrafo para 'Texto alterado' e inserir uma classe 'last' no último parágrafo?
-
-
+ 
+ var segP = document.querySelector(p:nth-child(2))
+ var lastP = document.querySelector(p:last-child)
+ 
+ segP.innerHTML = 'Texto alterado'
+ lastP.classList.add('last')
 
 5) Crie uma função que trate o texto ' Um operador de atribuição atribui um valor ao operando à sua esquerda baseado no valor do operando à direita. ' e retorna uma nova string com a palavra sem as vogais.
 
-
+  	var str = ' Um operador de atribuição atribui um valor ao operando à sua esquerda baseado no valor do operando à direita. '
+ 
+  	function removeVogais( string ){
+ 	 	let str = string.replace(/[aeiouà-ú]/gi,'')
+     		return (str)
+  	}
+ 
+ 	var result = removeVogais(str)
 
 6) Utilize o operador ternário em uma função que recebe um número - idade - e retorne uma string com um texto dizendo se o valor passado refere-se a maior de idade ou menor de idade.
 
-
+ function age(idade) {
+   let maioridade = idade > 17 ? 'Maior de Idade' : 'Menor de Idade'
+   return (maioridade)
+ }
 
 7) No objeto:
 
@@ -44,31 +70,75 @@ Você pode usar JQuery a vontade, embora seja preferível o código em Javascrip
 
 Como seria se fosse necessário alterar os atributos neste objeto em uma função que o recebe a propriedade nomeObj para 'Teclado' e o pesoObj para '500g' e indexar a um array os valores deste objeto?
 
+  var objFunc = ( objeto ) => {
+    objeto.nomeObj = 'Teclado'
+    objeto.pesoObj = '500g'
+     return (objeto)
+  }
+ 
+ var objArray = [ objFunc( obj ) ]
 
 
 8) No texto 'Eu quero trabalhar na Seri.e Design', retorne em variáveis diferentes:
+  a) O texto de trás para frente substituindo os espaços em branco por pontos de exclamação.
+  b) A ultima palavra do texto .
+  c) A quantidade de caracteres do texto.
+  d) O tipo de alguma variável criada acima.
 
-
-a) O texto de trás para frente substituindo os espaços em branco por pontos de exclamação.
-
-b) A ultima palavra do texto.
-c) A quantidade de caracteres do texto.
-
-d) O tipo de alguma variável criada acima.
-
-
+ var str = 'Eu quero trabalhar na Seri.e Design'
+  function reverseReplace(string) {
+   let result = ''
+   for (var i = string.length - 1; i >= 0; i--) {
+       result += string[i]
+   }
+   result = result.replace(/[ ]/g, '!')
+   return result
+ }
+  
+ var a = reverseReplace(str)
+ var b = str.substring(29)
+ var c = str.length
+ var d = typeof(a)
 
 9) Em uma lista de 10 divs , como seria caso fosse necessário atribuir uma propriedade 'data-id' com o seu valor sendo a posição que se encontra a div na lista?
-
-
-
+ 
+ var count = [1,2,3,4,5,6,7,8,9,10]
+ var id = ''
+ 
+ var mapDiv = count.map((elemento) => {
+   divID = 'data-' + elemento
+   let div = document.getElementsByTagName('div').id = divID
+   console.log(id)
+ })
+ 
 10) Suponha que um menu é composto por duas divs principais, a div 'container', que contém os items do primeiro nível do menu, e a div 'container__content', que está inclusa para cada uma das divs 'container' que existir itens de menu atrelado à elas. Faça um bloco javascript que trate o evento de click na div 'container' para ativar com uma classe 'active' a div 'container_content' que se encontra dentro da div clicada.
-
-
+ 
+ <div id='container' onClick={ativar()}>
+   <div id='container_content'>
+   </div>
+ </div>
+ 
+ ativar(){
+   containerCont = document.getElementById('container_content')
+   containerCont = classList.add('active')
+ }
 
 11) Em um container de 1170px de largura, como saber se a div '<div class="w" style="width: 1980px">' esta extrapolando a largura do container?
 
-
+   	<div class='container' style='width: 1170px'></div>
+ 	<div class="w" style="width: 1980px"></div>
+ 
+ 	<script>
+   var div = document.getElementsByClassName('w')
+   div = div[0].offsetWidth
+ 
+   var cont = document.getElementsByClassName('container')
+   cont = cont[0].offsetWidth
+ 
+   let validade = div > cont ? 'Div Maior' : 'Container Maior'
+ 
+   console.log(validade)
+ 	</script>
 
 12) O que o bloco de código seguinte está fazendo?
 
@@ -89,6 +159,7 @@ d) O tipo de alguma variável criada acima.
   	}, 1000);
   }observer();
 
+Resposte: Está avaliando dentro de 'footer .content__bottom' caso o tamanho seja superior a 1 ele não está repassando o que fazer, mas de qualquer forma incrementa ao fim +1 no contador, a checagem é feita a cada 1 seg (1000) do setInterval e quando o contador chega em 5 ele para a contagem.
 
 
 

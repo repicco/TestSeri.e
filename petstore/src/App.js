@@ -6,6 +6,8 @@ import Menu from './components/menu'
 import Banner from './components/banner'
 import News from './components/news'
 
+import Footer from './components/footer'
+
 class App extends Component {
   render(){
     return(
@@ -14,6 +16,8 @@ class App extends Component {
         <Menu/>
         <Banner/>
         <News/>
+        
+        <Footer/>
       </div>
     )
   }
