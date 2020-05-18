@@ -1,0 +1,13 @@
+************************************
+*****  TESTE SÉRI.E DESIGN  ********
+************************************
+
+
+O objetivo deste teste fazer uma página com HTML, CSS e JS ( se necessário ) simulando a home de uma loja chamada 'PET Store'.
+
+Você pode usar a criatividade para monta-la utilizando alguma API para puxar os produtos nas vitrines, ou pode optar por fazer com HTML estático ou usar Vue JS, por exemplo, porém nada é determinado aqui. Sinta-se livre para criar e estruturar o projeto como acha melhor.
+É preferível que não se use Frameworks CSS, como Bootstrap, por exemplo.
+
+O layout deve ser responsivo usando um tamanho máximo de container de 1170px ou menor se o seu monitor for menor que isto. Neste teste não usaremos o modelo mobile-first, portanto, o responsivo será feito da tela desktop para o mobile. No layout mobile você pode organizar os itens da forma que achar adequado.
+
+Será avaliado a organização, lógica e qualidade de código.
