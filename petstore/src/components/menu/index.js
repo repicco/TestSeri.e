@@ -31,9 +31,9 @@ class Menu extends Component{
         return(
             <nav id='menu' className='bg-purple wd-100 center'>
                     <div className='container center wd-100'>
-                        <button onClick={this.alterabotao} id='btn_menu'><i className={this.state.btnimage}></i></button>
+                            <button onClick={this.alterabotao} id='btn_menu'><i className={this.state.btnimage}></i></button>
                     </div>
-                    <ul id={this.state.btnstate} className='container menu wd-100 center' >
+                    <ul id={this.state.btnstate} className='container menu wd-100' >
                         <li className='col-3'>Home</li>
                         <li className='col-3'>Categoria
                             <ul>

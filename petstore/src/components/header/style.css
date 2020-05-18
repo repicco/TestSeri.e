@@ -1,7 +1,23 @@
 /* Header */
 
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.fa-search {
+  border: 1px solid;
+  border-left: none;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+
 .search-input {
-    
+    border: 1px solid;
+    border-right: none;
+    padding: 5px;
+    font-size: 1rem;
 }
 
 #logon {
@@ -24,4 +40,47 @@
     font-size: 20px;
     color: rgb(127,127,127);
     padding: 4px;
+}
+
+/* Sociais */
+
+.btn-close {
+  border: none;
+  position: fixed;
+  bottom: 25%;
+  right: 15%;
+  background-color: rgb(129, 88, 197);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-arrow-up {
+  font-size: 40px;
+  border-radius: 50%;
+  color: #fff;
+  padding: 8px;
+  background-color: rgb(127,127,127);
+  position: fixed;
+  bottom: 15%;
+  right: 15%;
+}
+
+.fa-whatsapp {
+  font-size: 40px;
+  border-radius: 50%;
+  color: #fff;
+  padding: 8px;
+  background-color: rgb(77, 194, 71);
+  position: fixed;
+  bottom: 5%;
+  right: 15%;
+}
+  
+#btn-fixed {
+  z-index: 99;
+  border: none;
+}
+
+#btn-fixed-close {
+  display: none;
 }
