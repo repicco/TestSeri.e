@@ -42,49 +42,99 @@ class News extends Component{
         return(
             <div className='wd-100 center'>
                 <h3 className='col-12 title'>NOVIDADES</h3>
-                <Slider {...settings} className='container'>
+                <Slider {...settings} className='container block-mob-flex'>
                     <div className='carousel-prod'>
-                        <Produto img={Prod7}/>
-                        <Produto img={Prod8}/>
-                        <Produto img={Prod5}/>
-                        <Produto img={Prod6}/>
+                        <Produto img={Prod7} mob={false} />
+                        <Produto img={Prod8} mob={false} />
+                        <Produto img={Prod5} mob={false} />
+                        <Produto img={Prod6} mob={false} />
                     </div>
                     <div className='carousel-prod'>
-                        <Produto img={Prod1}/>
-                        <Produto img={Prod2}/>
-                        <Produto img={Prod7}/>
-                        <Produto img={Prod8}/>
+                        <Produto img={Prod1} mob={false} />
+                        <Produto img={Prod2} mob={false} />
+                        <Produto img={Prod7} mob={false} />
+                        <Produto img={Prod8} mob={false} />
                     </div>
                     <div className='carousel-prod'>
-                        <Produto img={Prod3}/>
-                        <Produto img={Prod4}/>
-                        <Produto img={Prod5}/>
-                        <Produto img={Prod6}/>
+                        <Produto img={Prod3} mob={false} />
+                        <Produto img={Prod4} mob={false} />
+                        <Produto img={Prod5} mob={false} />
+                        <Produto img={Prod6} mob={false} />
+                    </div>
+                </Slider>
+                <Slider {...settings} className='container block-desk-flex'>
+                    <div className='carousel-prod'>
+                        <Produto img={Prod7} mob={true} />
+                        <Produto img={Prod8} mob={true} />
+                    </div>
+                    <div className='carousel-prod'>
+                        <Produto img={Prod5} mob={true} />
+                        <Produto img={Prod6} mob={true} />
+                    </div>
+                    <div className='carousel-prod'>
+                        <Produto img={Prod1} mob={true} />
+                        <Produto img={Prod2} mob={true} />
+                    </div>
+                    <div className='carousel-prod'>
+                        <Produto img={Prod7} mob={true} />
+                        <Produto img={Prod8} mob={true} />
+                    </div>
+                    <div className='carousel-prod'>
+                        <Produto img={Prod3} mob={true} />
+                        <Produto img={Prod4} mob={true} />
+                    </div>
+                    <div className='carousel-prod'>
+                        <Produto img={Prod5} mob={true} />
+                        <Produto img={Prod6} mob={true} />
                     </div>
                 </Slider>
                 <div id='categoria' className='wd-100 center'>
                     <h3 className='col-12 title'>Categoria de Produtos</h3>
-                    <Slider {...settings2} className='container wd-100'>
+                    <Slider {...settings2} className='container wd-100 block-mob-flex'>
                         <div className='carousel-prod'>
-                            <CategoriaProduto img={Cao} categoria='Cachorros' class='txt-cat txt-cat-left'/>
-                            <CategoriaProduto img={Gato} categoria='Gatos' class='txt-cat txt-cat-right'/>
+                            <CategoriaProduto img={Cao} categoria='Cachorros' class='txt-cat txt-cat-left' mob={false} />
+                            <CategoriaProduto img={Gato} categoria='Gatos' class='txt-cat txt-cat-right' mob={false} />
                         </div>
                         <div className='carousel-prod'>
-                            <CategoriaProduto img={Exoticos} categoria='Exóticos' class='txt-cat txt-cat-left'/>
-                            <CategoriaProduto img={Passaros} categoria='Passáros' class='txt-cat txt-cat-right'/>
+                            <CategoriaProduto img={Exoticos} categoria='Exóticos' class='txt-cat txt-cat-left' mob={false} />
+                            <CategoriaProduto img={Passaros} categoria='Passáros' class='txt-cat txt-cat-right' mob={false} />
+                        </div>
+                    </Slider>
+                    <Slider {...settings2} className='container wd-100 block-desk-flex'>
+                        <div className='carousel-prod'>
+                            <CategoriaProduto img={Cao} categoria='Cachorros' class='txt-cat txt-cat-left' mob={true} />
+                        </div>
+                        <div className='carousel-prod'>
+                            <CategoriaProduto img={Gato} categoria='Gatos' class='txt-cat txt-cat-right' mob={true} />
+                        </div>
+                        <div className='carousel-prod'>
+                            <CategoriaProduto img={Exoticos} categoria='Exóticos' class='txt-cat txt-cat-left' mob={true} />
+                        </div>
+                        <div className='carousel-prod'>
+                            <CategoriaProduto img={Passaros} categoria='Passáros' class='txt-cat txt-cat-right' mob={true} />
                         </div>
                     </Slider>
                 </div>
                 <h3 className='col-12 title'>Produtos</h3>
-                <div id='novidades1' className='container'>
-                    <Produto img={Prod1}/>
-                    <Produto img={Prod2}/>
-                    <Produto img={Prod3}/>
-                    <Produto img={Prod4}/>
-                    <Produto img={Prod5}/>
-                    <Produto img={Prod6}/>
-                    <Produto img={Prod7}/>
-                    <Produto img={Prod8}/>
+                <div id='novidades1' className='container block-mob-flex'>
+                    <Produto img={Prod1} mob={false} />
+                    <Produto img={Prod2} mob={false} />
+                    <Produto img={Prod3} mob={false} />
+                    <Produto img={Prod4} mob={false} />
+                    <Produto img={Prod5} mob={false} />
+                    <Produto img={Prod6} mob={false} />
+                    <Produto img={Prod7} mob={false} />
+                    <Produto img={Prod8} mob={false} />
+                </div>
+                <div id='novidades1' className='container block-desk-flex'>
+                    <Produto img={Prod1} mob={true} />
+                    <Produto img={Prod2} mob={true} />
+                    <Produto img={Prod3} mob={true} />
+                    <Produto img={Prod4} mob={true} />
+                    <Produto img={Prod5} mob={true} />
+                    <Produto img={Prod6} mob={true} />
+                    <Produto img={Prod7} mob={true} />
+                    <Produto img={Prod8} mob={true} />
                 </div>
                 <h3 className='txt-prod'>Todos os Produtos</h3>
             </div>

@@ -91,10 +91,19 @@
   
   
   @media(max-width: 600px){
-    .menu {
-      flex-direction: column;
-      padding-bottom: 15px;
-    }
+  .menu {
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+
+  .menu, li {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .menu ul {
+    top: 0;
+    left: 100%;
   }
   
   .btn-bar {
@@ -103,3 +112,5 @@
     padding: 3px;
     color: rgb(255, 162, 0);
   }
+
+}

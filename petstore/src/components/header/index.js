@@ -25,7 +25,7 @@ class Header extends Component{
     render(){
         return(
             <header id='header' className='container mobile'>
-                <div className='col-2 col-s12 center relative search'>
+                <div className='col-2 col-s12 center relative search block-mob-flex'>
                     <input type='text' placeholder='Pesquisar...' className='search-input'></input>
                     <i className="fas fa-search"></i> 
                 </div>

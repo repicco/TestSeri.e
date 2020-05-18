@@ -11,3 +11,17 @@
   .slick-list{
     width: 100%;
   }
+
+  .txt-prod {
+    color: #fff;
+    background-color:rgb(255, 162, 0);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .txt-prod:hover {
+    background-color: #fff;
+    color:rgb(255, 162, 0);
+  }
