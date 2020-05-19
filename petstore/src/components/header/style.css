@@ -123,3 +123,15 @@
 #btn-fixed-close {
   display: none;
 }
+
+@media(max-height: 568px) {
+  .fa-arrow-up {
+    bottom: 5%;
+    right: 25%;
+  }
+
+  .btn-close {
+    bottom: 15%;
+    right: 10%;
+  }
+}
