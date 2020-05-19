@@ -1,3 +1,85 @@
 #contato {
     margin-top: 20px;
 }
+
+.contato-emblema {
+    padding: 5px;
+    border-bottom: 2px solid rgb(255, 162, 0);
+}
+
+.emblema {
+    padding: 10px;
+}
+
+.img-emblema {
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+.emblema p, .contato-news p {
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+.contato-news h3 {
+    padding: 20px;
+    color: #fff;
+}
+
+.contato-form {
+    margin: 20px 0 20px 0;
+}
+
+
+.form {
+    margin: 5px;
+    background-color: rgb(129, 88, 197);
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-btn {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 162, 0);
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    background-color: #fff;
+    color: rgb(255, 162, 0);
+}
+
+/* Placeholder */
+::-webkit-input-placeholder {
+    color: #fff;
+ }
+ 
+ :-moz-placeholder {
+    color: #fff;
+ }
+ 
+ ::-moz-placeholder {
+    color: #fff;  
+ }
+ 
+ :-ms-input-placeholder {  
+    color: #fff;  
+ }
+
+ @media(max-width: 600px) {
+    .contato-news h3 {
+        font-size: 0.9rem;
+    }
+
+    .form {
+        margin: 15px;
+    }
+}
+
+
+

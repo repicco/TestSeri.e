@@ -10,6 +10,17 @@ html, body {
     height: 100%;
 }
 
+.flex-collum {
+    display: flex;
+    flex-direction: column !important;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row !important;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
 
 .container {

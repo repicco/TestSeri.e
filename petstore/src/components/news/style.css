@@ -18,13 +18,22 @@
 
   .slick-dots{
     bottom: -35px;
-    width: 72%;
+    font-size: 1rem;
   }
 
   .slick-dots li{
     border: none;
     background-color: #fff;
+  }
+
+  .slick-dots li button:before {
+    font-size: 8px;
     color: rgb(129, 88, 197);
+  }
+
+  .slick-dots li.slick-active button:before {
+    font-size: 10px;
+    color: rgb(255, 162, 0);
   }
 
   .txt-prod {

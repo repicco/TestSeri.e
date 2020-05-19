@@ -42,7 +42,7 @@ class News extends Component{
         return(
             <div className='wd-100 center'>
                 <h3 className='col-12 title'>NOVIDADES</h3>
-                <Slider {...settings} className='container block-mob-flex'>
+                <Slider {...settings} className='container center block-mob-flex'>
                     <div className='carousel-prod'>
                         <Produto img={Prod7} mob={false} />
                         <Produto img={Prod8} mob={false} />
@@ -62,7 +62,7 @@ class News extends Component{
                         <Produto img={Prod6} mob={false} />
                     </div>
                 </Slider>
-                <Slider {...settings} className='container block-desk-flex'>
+                <Slider {...settings} className='container center block-desk-flex'>
                     <div className='carousel-prod'>
                         <Produto img={Prod7} mob={true} />
                         <Produto img={Prod8} mob={true} />
@@ -90,7 +90,7 @@ class News extends Component{
                 </Slider>
                 <div id='categoria' className='wd-100 center'>
                     <h3 className='col-12 title'>Categoria de Produtos</h3>
-                    <Slider {...settings2} className='container wd-100 block-mob-flex'>
+                    <Slider {...settings2} className='container center wd-100 block-mob-flex'>
                         <div className='carousel-prod'>
                             <CategoriaProduto img={Cao} categoria='Cachorros' class='txt-cat txt-cat-left' mob={false} />
                             <CategoriaProduto img={Gato} categoria='Gatos' class='txt-cat txt-cat-right' mob={false} />
@@ -100,7 +100,7 @@ class News extends Component{
                             <CategoriaProduto img={Passaros} categoria='Passáros' class='txt-cat txt-cat-right' mob={false} />
                         </div>
                     </Slider>
-                    <Slider {...settings2} className='container wd-100 block-desk-flex'>
+                    <Slider {...settings2} className='container wd-100 center block-desk-flex'>
                         <div className='carousel-prod'>
                             <CategoriaProduto img={Cao} categoria='Cachorros' class='txt-cat txt-cat-left' mob={true} />
                         </div>
