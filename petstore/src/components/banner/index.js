@@ -37,7 +37,7 @@ class Banner extends Component{
                     </div>
                 </Slider>
                 
-                <div className='bg-orange wd-100 center'>
+                <div id='banner-orange' className='bg-orange wd-100 center'>
                     <div className='container card-categoria block-mob-flex'>
                         <div className='col-4 col-s12 card-cat'>
                             <img alt='Categoria' className='img-cat' src={Racoes} />
