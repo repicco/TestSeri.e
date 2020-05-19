@@ -124,7 +124,7 @@
   display: none;
 }
 
-@media(max-height: 568px) {
+@media(max-height: 565px) {
   .fa-arrow-up {
     bottom: 5%;
     right: 25%;
